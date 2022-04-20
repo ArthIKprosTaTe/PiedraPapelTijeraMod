@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xEJCIMCrEeyo8u_Nt9Pufg" name="UML">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_xFVU8MCrEeyo8u_Nt9Pufg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_snJc8MCsEeyo8u_Nt9Pufg" name="Default Package">
+    <packagedElement xmi:type="uml:Class" xmi:id="_zBSEQMCrEeyo8u_Nt9Pufg" name="MoveWords">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6DgJ0MCrEeyo8u_Nt9Pufg" name="EMPATE" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ANkfYMCsEeyo8u_Nt9Pufg" name="GANA" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BTlsQMCsEeyo8u_Nt9Pufg" name="PIERDE" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Clq_MMCsEeyo8u_Nt9Pufg" name="validMoves" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Clq_McCsEeyo8u_Nt9Pufg" value="&quot;TIJERAS&quot;, &quot;PAPEL&quot;, &quot;PIEDRA&quot;,&quot;LAGARTO&quot;,&quot;SPOCK&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MZj7IMCsEeyo8u_Nt9Pufg" name="validCommands array" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_MZj7IcCsEeyo8u_Nt9Pufg" value="&quot;SALIR&quot;, &quot;HELP&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jjxX8MCsEeyo8u_Nt9Pufg" name="rnd Random" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNhF0MCsEeyo8u_Nt9Pufg" name="getIndex" visibility="private">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNhF0cCsEeyo8u_Nt9Pufg" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNhF0sCsEeyo8u_Nt9Pufg" name="i" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNhF08CsEeyo8u_Nt9Pufg" name="isValidMoveCommand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNhF1MCsEeyo8u_Nt9Pufg" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNhF1cCsEeyo8u_Nt9Pufg" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNhF1sCsEeyo8u_Nt9Pufg" name="randomMove">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNhF18CsEeyo8u_Nt9Pufg" name="p">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNhF2MCsEeyo8u_Nt9Pufg" name="validMoves" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNhF2cCsEeyo8u_Nt9Pufg" name="showWords"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNhF2sCsEeyo8u_Nt9Pufg" name="showCommands"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNhF28CsEeyo8u_Nt9Pufg" name="showMoves"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNq20MCsEeyo8u_Nt9Pufg" name="MoveWords">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNq20cCsEeyo8u_Nt9Pufg" name="rnd" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nNq20sCsEeyo8u_Nt9Pufg" name="checkWinner">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNq208CsEeyo8u_Nt9Pufg" name="first">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNq21MCsEeyo8u_Nt9Pufg" name="second">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNq21cCsEeyo8u_Nt9Pufg" name="GANA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nNq21sCsEeyo8u_Nt9Pufg" name="PIERDE" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1NxUgMCsEeyo8u_Nt9Pufg" name="Parser">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_635lwMCsEeyo8u_Nt9Pufg" name="reader Scanner" visibility="private"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CUViIMCtEeyo8u_Nt9Pufg" name="move" visibility="private">
+        <type xmi:type="uml:Class" href="../../pptUML/src.uml#_hJ_HcMA7EeyUXuwMx1Ja1w"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_f32DUMCtEeyo8u_Nt9Pufg" name="showCommands" visibility="public"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_f32DUcCtEeyo8u_Nt9Pufg" name="getMove">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f32DUsCtEeyo8u_Nt9Pufg" name="move" direction="return">
+          <type xmi:type="uml:Class" href="../../pptUML/src.uml#_Aem9wMA4EeyUXuwMx1Ja1w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_f32DU8CtEeyo8u_Nt9Pufg" name="newRandomMove">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f32DVMCtEeyo8u_Nt9Pufg" direction="return">
+          <type xmi:type="uml:Class" href="../../pptUML/src.uml#_Aem9wMA4EeyUXuwMx1Ja1w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_f32DVcCtEeyo8u_Nt9Pufg" name="Parser">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f32DVsCtEeyo8u_Nt9Pufg" direction="out">
+          <type xmi:type="uml:Class" href="../../pptUML/src.uml#_hJ_HcMA7EeyUXuwMx1Ja1w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f32DV8CtEeyo8u_Nt9Pufg" direction="out"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_46MtgMCtEeyo8u_Nt9Pufg" name="Move">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7tvzMMCtEeyo8u_Nt9Pufg" name="move" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9ljCUMCtEeyo8u_Nt9Pufg" name="isUnknown">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9ljCUcCtEeyo8u_Nt9Pufg" name="move" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9ljCUsCtEeyo8u_Nt9Pufg" name="Move">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9ljCU8CtEeyo8u_Nt9Pufg" name="move">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9ljCVMCtEeyo8u_Nt9Pufg" name="getMove">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9ljCVcCtEeyo8u_Nt9Pufg" name="move" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9ljCVsCtEeyo8u_Nt9Pufg" name="beats">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9ljCV8CtEeyo8u_Nt9Pufg" direction="return">
+          <type xmi:type="uml:Class" href="../../pptUML/src.uml#_hJ_HcMA7EeyUXuwMx1Ja1w"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__KHzcMCtEeyo8u_Nt9Pufg" name="Game">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_C28DcMCuEeyo8u_Nt9Pufg" name="parser" visibility="private">
+        <type xmi:type="uml:Class" href="../../pptUML/src.uml#_MqxCgMBBEeyUXuwMx1Ja1w"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E2vYAMCuEeyo8u_Nt9Pufg" name="Game">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_E2vYAcCuEeyo8u_Nt9Pufg" name="parser" direction="out">
+          <type xmi:type="uml:Class" href="../../pptUML/src.uml#_MqxCgMBBEeyUXuwMx1Ja1w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E2vYAsCuEeyo8u_Nt9Pufg" name="welcome" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E2vYA8CuEeyo8u_Nt9Pufg" name="printHelp" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E2vYBMCuEeyo8u_Nt9Pufg" name="printMoves" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E2vYBcCuEeyo8u_Nt9Pufg" name="printWinner" visibility="private" concurrency="guarded">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_E2vYBsCuEeyo8u_Nt9Pufg" name="who" effect="read">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
