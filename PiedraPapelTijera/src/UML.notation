@@ -235,7 +235,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_snJc9sCsEeyo8u_Nt9Pufg"/>
     </children>
     <element xmi:type="uml:Package" href="UML.uml#_snJc8MCsEeyo8u_Nt9Pufg"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_snJc8sCsEeyo8u_Nt9Pufg" x="320" width="881" height="441"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_snJc8sCsEeyo8u_Nt9Pufg" x="40" y="40" width="881" height="441"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_xEb9EcCrEeyo8u_Nt9Pufg" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_xEb9EsCrEeyo8u_Nt9Pufg"/>
